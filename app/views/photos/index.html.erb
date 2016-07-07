@@ -1,0 +1,11 @@
+<% @photos.each do |photo| %>
+	<div class="card">
+		<div class="card-header">
+			<%= photo.username %>
+			<span class="timestamp pull-xs-right"><%= time_ago_in_words photo.created_at %></span>
+		</div>
+		<%= image_tag(photo.url, class: "card-img") %>
+		<p class="card-text"><%= photo.caption %></p>
+		<%= pluralize photo.likes_count, 'like' %>
+	</div>
+<% end %>
