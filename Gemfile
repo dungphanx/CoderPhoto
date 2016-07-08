@@ -56,3 +56,7 @@ source 'https://rails-assets.org' do
 end
 
 gem 'rails_12factor'
+
+gem 'faker'
+
+gem 'kaminari'
